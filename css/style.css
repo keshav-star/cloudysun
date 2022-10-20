@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url(../img/pexels-brett-sayles-1431822.jpg);
+    background-size: cover;
+
+}
+
+nav{
+    position:sticky;
+    top: 0;
+    display: flex;
+    background-color: rgba(9, 78, 162, 0.3);
+    
+}
+nav div{
+    letter-spacing: 0.1rem;
+    margin: .7rem 0;
+}
+nav div a{
+    text-decoration: none;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+nav div a:hover{
+    background-color: rgba(11, 48, 92, 0.5);
+}
+.today{
+    display: flex;
+}
+.mid,.right,.left{
+    padding: 4rem;
+    margin: 3rem 6rem;
+}
+@media screen and (max-width:892px) {
+    .left,.right,.mid{
+        padding: 2rem;
+        margin:2rem 4rem
+    }
+}
+.left{
+    background-color: rgba(23, 86, 158, 0.4);
+    font-size: 3rem;
+}
+.right{
+    margin-left: auto;
+    background-color: rgba(23, 86, 158, 0.4);
+}
+@media screen and (max-width:530px) {
+    .today,nav{
+        display: block;
+    }
+    .right{
+        margin: 3rem;
+    }
+    nav div a{
+        font-size: 1rem;
+    }
+}
+.week{
+    margin: 3rem 1rem;
+    display: flex;
+    /* padding: 1rem; */
+    scrollbar-width: none;
+    overflow: scroll;
+}
+card{
+    margin: 0 1rem ;
+    background-color: rgba(23, 86, 158, 0.4);
+    padding: 1rem;
+    width: 12rem;
+    height: 15rem;
+    text-align: center;
+    border-radius: 3%;
+}
+.week p{
+    margin: 1rem 0;
+}
+card img{
+    border: 2px solid red;
+    height:4rem;
+    width:7rem;
+}

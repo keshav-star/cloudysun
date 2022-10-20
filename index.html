@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudySun</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="js/api.js"></script>
+    <script async src="./js/index.js"></script>    
+</head>
+
+<body>
+    <nav id="navbar">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="./weather.html">Weather of the week</a></div>
+        <div><a href="./stack.html">Stack Used</a></div>
+        <div><a href="./about.html">About me</a></div>
+    </nav>
+
+    <section class="today">
+        <div class="left">
+            <p id="temp">23 &#xb0; C</p>
+            <p id="date"></p>
+        </div>
+        
+        <div class="mid">
+            <img id="image" src="" alt="" >
+
+        </div>
+        <div class="right ">
+            <p id="city">gharaunda</p>
+        </div>
+    </section>
+    <section class="week">
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+        <card class="cardin">
+            <p class="temp">23 &#xb0; C</p>
+            <p>12-13</p>
+
+            <img src=""  alt="">
+        </card>
+    </section>
+
+    <script>
+        let wd = document.body.clientWidth;
+        if(wd<350){
+            document.getElementById('navbar').classList.add('collapse');
+        }
+    </script>
+</body>
+
+</html>

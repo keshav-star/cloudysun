@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style: url(../img/arrow.png);
+}
+
+nav {
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgba(9, 78, 162, 0.5);
+}
+
+@media screen and (max-width:530px) {
+    nav {
+        display: block;
+    }
+
+    .right {
+        margin: 3rem;
+    }
+
+    nav div a {
+        font-size: 1rem;
+    }
+}
+
+nav div {
+    letter-spacing: 0.1rem;
+    margin: .7rem 0;
+}
+
+nav div a {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav div a:hover {
+    background-color: rgba(11, 48, 92, 0.5);
+}
+
+.container {
+    margin: auto;
+    width: 68%;
+    padding: 2rem 0;
+}
+
+.container span,
+p {
+    background-color: rgba(56, 53, 53, 0.7);
+    padding: 9px;
+    margin: 20px 0;
+    border-radius: 25px;
+    color: white;
+}
+
+.port {
+    margin: 20px 0;
+}
+
+.port a {
+    color: white;
+    background-color: rgb(3, 113, 3, 0.9);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.port a:hover {
+    background-color: rgb(3, 113, 3, 0.6);
+
+}
+
+section {
+    scrollbar-width: none;
+    overflow: scroll;
+    display: flex;
+    position: relative;
+}
+
+.card {
+    margin: 1.2rem;
+    background-color: rgb(32, 167, 122, 0.4);
+    padding: 5px;
+}
+
+.card img {
+    opacity: 0.8;
+}
+
+.card a {
+    position: absolute;
+    bottom: 19px;
+    padding: 7px;
+    color: Black;
+}
+
+.card a:hover {
+    animation: rise 0.5s linear 1 forwards;
+}
+
+@keyframes rise {
+
+    0%,
+    30% {
+        display: none;
+    }
+
+    80%,
+    100% {
+        position: absolute;
+        bottom: 19px;
+        padding: 7px;
+        color: white;
+        background-color: rgb(51, 47, 47, 0.4);
+    }
+}
+@media screen and (max-width:370px) {
+    section{
+        display: block;
+    }
+}
