@@ -1,7 +1,7 @@
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': api,
+        'X-RapidAPI-Key': "94725f4f44msh7dc95d0b632c1eap170390jsnb550e4dffd23",
         'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com'
     }
 };

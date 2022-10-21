@@ -124,4 +124,7 @@ section {
     section{
         display: block;
     }
+    .container span{
+        font-size: 12px;
+    }
 }
